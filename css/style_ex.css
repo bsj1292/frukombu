@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}  
+#section2{
+    width: 1320px;
+    margin: 0 auto;
+    height: 600px;
+    text-align: center;
+}
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+}
+.product li{
+    position: relative;
+}
+.product li a:hover .fruit_icon{
+    transform: translateY(-20px);
+}
+.fruit_icon{
+    position: absolute;
+    top: -180px;
+    left: 50%;
+    margin-left: -60px;
+}

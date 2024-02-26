@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@keyframes flow{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #333;
+}
+html {
+    font-size: 16px;
+}
+#wrap{
+    min-width: 1380px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide li{
+    border-radius: 213px;
+}
+.swiper-slide img {
+    display: inline-block;
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover; */
+}
+/* header */
+#header {
+    height: 130px;
+    border-bottom: 2px solid #c30055;
+}
+.inner_header {
+    width: 1320px;
+    margin: 30px auto;
+    position: relative;
+}
+.logo {
+    text-align: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav li {
+    padding-bottom: 30px;
+    margin-top: 40px;
+}
+.nav li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+.util_wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.util li {
+    margin: 0 15px;
+    float: left;
+}
+.util li a {
+    display: block;
+    font-size: 16px;
+}
+.search{
+    border: 1px solid #666;
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background: url(../images/header/search.svg)no-repeat right 7px center;
+}
+.search input{
+  border: none;
+  display: block;
+  outline: none;
+  width: 150px;
+}
+/* banner */
+#banner{
+    height: 771px;
+    background: url(../images/sub_community/banner/community_banner.jpg) no-repeat center;
+}
+/* section1 */
+#section1{
+    width: 1320px;
+    margin: 100px auto;
+    text-align: center;
+    overflow: hidden;
+}
+.review{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.underline{
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+.review_box{
+    display: flex;
+    justify-content: space-between;
+    width: 609px;
+}
+.review_text{
+    text-align: left;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.review_info{
+    display: flex;
+    justify-content: start;
+}
+.line::after{
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color:#333;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 8px;
+}
+/* sns */
+#sns_wrap{
+    overflow: hidden;
+}
+#sns{
+    text-align: center;
+    margin-top: 100px;
+}
+#sns h1{
+    margin-bottom: 20px;
+}
+.animated{
+    position: relative;
+    height: 348px;
+    overflow: hidden;
+}
+.track{
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    animation: flow 30s linear infinite;
+    font-size: 0;
+}
+.track img{
+    display: inline-block;
+}
+/* footer */
+#footer{
+    background: url(../images/footer/footer_background.jpg) no-repeat center;
+    height: 348px;
+    margin-top: 100px;
+}
+.inner_footer{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px;
+}
+.inner_footer p{
+    font-size: 14px;
+}
+.footer_logo{
+    margin-right: 20px;
+}
+.footer_left{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footer_right li{
+    float: left;
+    margin: 0 10px;
+}
+.footer_right li a{
+    display: block;
+    opacity: 0.5;
+}
+.footer_right li a:hover{
+    opacity: 1;
+}
+.footer_link{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    /* background-color: yellow; */
+}
+.footer_link li{
+    float: left;
+    margin: 0 10px;
+}
+.footer_link li a{
+    display: block;
+    font-weight: bold;
+    color: #c30055;
+    font-size: 14px;
+}
